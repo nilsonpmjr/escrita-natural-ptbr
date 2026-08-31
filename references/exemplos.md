@@ -100,8 +100,8 @@ Aplicando as três passadas ao miolo do artigo:
 > Testamos uma plataforma de Banking as a Service que era, honestamente, das mais
 > bem-feitas que já vimos. mTLS, certificados digitais, credenciais de cliente, e
 > todo objeto de negócio identificado por UUID, sem nenhum padrão sequencial para
-> adivinhar. Sem XSS, sem SQL injection, sem enumeração trivial. Passaria com folga
-> por qualquer checklist e por qualquer scanner.
+> adivinhar. Não achamos XSS nem SQL injection, e a enumeração trivial esbarrava nos
+> UUIDs. Passaria com folga por qualquer checklist e por qualquer scanner.
 >
 > Movemos mais de R$ 200 mil de uma conta que não era nossa.
 >
@@ -127,3 +127,61 @@ O que mudou, em resumo: o clímax ganhou parágrafo próprio, o sujeito virou ge
 ("movemos", "o time", "ninguém"), a série de três se desfez, os advérbios saíram, os
 dois parágrafos de eco foram cortados, e o texto termina numa imagem em vez de numa
 tese repetida.
+
+Uma correção posterior: a anáfora tripla "sem XSS, sem SQL injection, sem enumeração
+trivial" tinha sobrevivido às três passadas na primeira edição deste arquivo, embora
+o tique 2 de [estruturas.md](estruturas.md) a liste como exemplo de simetria
+compulsiva. Virou "não achamos XSS nem SQL injection, e a enumeração trivial
+esbarrava nos UUIDs", que quebra o paralelismo e ainda acrescenta a causa.
+
+## Segundo corpus: o texto que fica estéril de tanto fugir de tique
+
+O corpus acima mostra texto de IA cru. Este mostra o defeito seguinte, que só aparece
+depois que a skill entra em uso: uma newsletter de 1.100 palavras sobre pentest de
+API financeira, escrita com esta skill rodando, entregue e devolvida pelo autor com o
+diagnóstico de que estava estéril e de que faltavam "colocações".
+
+As medições do texto entregue:
+
+| Medida | Resultado |
+|---|---|
+| Frases de até oito palavras | 14 de 56, um quarto do total |
+| Aberturas de parágrafo que retomam o anterior | 5 de 18 |
+| Aberturas com substantivo sem determinante | 3 |
+
+A causa não foi descuido, foi obediência demais às proibições. O texto fugiu do tique
+3 trocando a frase-manchete por asserção curta, cortou os conectivos sem pôr retomada
+nenhuma no lugar, e a subordinação foi junto. Cada regra isolada estava cumprida.
+
+### Retomada depois de lista
+
+> ❌ "Encadeados, viram um caminho: descobrir clientes válidos por força bruta sem ser
+> barrado, gerar token fora do trajeto auditado e usar esse token no endpoint que não
+> verifica o dono da conta. Severidade individual engana."
+>
+> ✅ "Esses quatro pontos, encadeados, viram um caminho só. Um atacante descobre
+> client_ids válidos por força bruta, já que nada o barra, gera um token fora do
+> trajeto que a empresa audita e usa esse token no endpoint que nunca pergunta de
+> quem é a conta. Nenhum dos quatro tiraria alguém da cama de madrugada, e essa é
+> justamente a armadilha da severidade individual: ela é calculada achado por achado,
+> enquanto quem ataca trabalha com a soma."
+
+Três palavras devolvem o referente. A punchline "Severidade individual engana"
+dissolve dentro da oração e vira argumento, em vez de efeito.
+
+### Sujeito sem determinante na abertura
+
+> ❌ "Ferramenta automatizada acha padrão, e não existe padrão para 'esta conta não é
+> sua'."
+>
+> ✅ "Nenhuma ferramenta automatizada acha esse tipo de coisa, e a razão é simples: um
+> scanner procura padrão, e não existe padrão para 'esta conta não é sua'."
+
+A abertura ganha o determinante e ganha vínculo com o parágrafo anterior, no "esse
+tipo de coisa".
+
+### A lição do segundo corpus
+
+Lista de proibição sem modelo de construção produz um texto que não erra nada e não
+soa a ninguém. Foi por causa deste caso que o arquivo virou leitura obrigatória antes
+de escrever, e não referência de consulta depois.

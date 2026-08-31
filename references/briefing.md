@@ -1,17 +1,55 @@
-# Briefing: tema, contexto, tom e público
+# Briefing: estilo, tema, contexto, tom e público
 
 Quase todo texto vazio nasce aqui. Sem saber para quem escreve e para quê, o modelo
 cai no registro médio da internet, que é exatamente o registro que soa a IA. Este
-arquivo diz o que perguntar, como perguntar e o que assumir quando o usuário não
-responde.
+arquivo diz o que perguntar, em que ordem, como perguntar e o que assumir quando o
+usuário não responde.
 
-## As quatro perguntas
+## As cinco perguntas
 
-Uma rodada só, com AskUserQuestion, no máximo quatro perguntas, sempre com opções
-concretas e uma marcada como recomendada. O que já veio no pedido do usuário não se
-pergunta de novo.
+Uma rodada só, com AskUserQuestion, no máximo quatro perguntas por rodada, sempre com
+opções concretas e uma marcada como recomendada. O que já veio no pedido do usuário
+não se pergunta de novo, e o estilo quase sempre cabe nessa categoria.
 
-### 1. Tema e recorte
+A ordem importa. O estilo vem primeiro porque fixa o modelo de voz, e o modelo de voz
+governa o tom, a extensão e o jeito de construir a frase. Tema, contexto, tom e
+público vêm depois.
+
+Quando o usuário não informou nada, nem tema nem canal, inverta a ordem e **peça o
+contexto antes de qualquer outra coisa**: onde publica, quem assina, o que motivou o
+texto. Perguntar estilo a quem ainda não disse onde vai publicar é oferecer opção no
+vácuo.
+
+### 1. Estilo e modelo de voz
+
+Esta é a primeira pergunta e, na maioria das vezes, ela não chega a ser feita: o
+estilo se deduz. O jeito como o usuário escreveu o pedido, o canal que ele citou, o
+documento que anexou como referência e qualquer texto anterior dele já dizem quase
+tudo. Pergunte apenas o que não der para deduzir, e pergunte oferecendo modelos de
+voz, nunca adjetivos soltos.
+
+O que você precisa saber é qual **modelo de voz** o texto imita, porque é ele que
+decide a construção das frases:
+
+| Estilo | Modelo de voz | Como se reconhece |
+|---|---|---|
+| Texto de autor, coluna, newsletter pessoal | crônica brasileira | elipse, justaposição, digressão que volta, fecho em imagem |
+| Especialista explicando o que viu | reportagem explicativa | referente repetido de propósito, subordinação, exemplo antes da regra |
+| Relatório, resumo executivo, parecer | manual de redação | pirâmide invertida, ordem direta, número no lugar do adjetivo |
+| Documentação, tutorial, procedimento | manual de instrução | imperativo, ordem de execução, nenhuma voz autoral |
+| Post curto, anúncio, copy | publicidade | a primeira linha carrega tudo, e frase curta é recurso, não defeito |
+
+**A crônica é um modelo, não o modelo.** Ela aparece mais que os outros nas
+referências desta skill porque ensina economia melhor que qualquer manual, só que a
+economia é o estilo dela. Em texto de especialista, repetir o referente na abertura
+do parágrafo é função e não redundância, porque o leitor precisa reencontrar o
+assunto para acompanhar o raciocínio. Quem aplica o corte da crônica a um artigo
+técnico termina com legenda de infográfico.
+
+Duas perguntas fecham o estilo quando a dedução não basta: quem o texto imita, e o
+que o autor não quer parecer.
+
+### 2. Tema e recorte
 
 Não é "sobre o que", é "qual pedaço disso". Tema largo produz texto largo.
 
@@ -20,7 +58,7 @@ Não é "sobre o que", é "qual pedaço disso". Tema largo produz texto largo.
 - Existe um caso, um projeto, um número ou uma experiência do próprio usuário que
   deve estar no texto? Esse material é o que nenhum concorrente tem.
 
-### 2. Contexto
+### 3. Contexto
 
 - Onde o texto vai ser publicado: blog, LinkedIn, newsletter, wiki interna, revista,
   proposta comercial, task de sistema.
@@ -32,7 +70,7 @@ Não é "sobre o que", é "qual pedaço disso". Tema largo produz texto largo.
 Sobre a última: em texto que toca trabalho de cliente, nome de cliente, dado de
 ambiente e achado não publicado ficam fora, salvo autorização explícita.
 
-### 3. Tom
+### 4. Tom
 
 Pergunte com exemplo, não com adjetivo. "Formal" e "descontraído" significam coisas
 diferentes para cada pessoa. Ofereça amostras curtas:
@@ -47,7 +85,7 @@ diferentes para cada pessoa. Ofereça amostras curtas:
 Pergunte também o que o autor **não** quer soar. "Não quero parecer vendedor" e "não
 quero parecer acadêmico" recortam mais rápido que qualquer escala.
 
-### 4. Público
+### 5. Público
 
 - Quem lê: função, nível de conhecimento no assunto, o que já sabe sem explicação.
 - O que essa pessoa deveria pensar ou fazer depois de ler.
@@ -66,6 +104,7 @@ Assuma, declare em uma linha e escreva. Nunca trave esperando resposta.
 
 | Campo | Padrão |
 |---|---|
+| Estilo | O modelo de voz que o canal citado sugere; sem canal, especialista explicando |
 | Recorte | O ângulo mais específico que o material do usuário sustenta |
 | Tom | Direto profissional, com "você" para o leitor |
 | Público | Profissional da área, sem ser especialista no subtema |
@@ -75,9 +114,10 @@ Assuma, declare em uma linha e escreva. Nunca trave esperando resposta.
 
 ## Bloco de briefing fechado
 
-Antes de pesquisar, devolva ao usuário cinco linhas e peça confirmação. Formato:
+Antes de pesquisar, devolva ao usuário seis linhas e peça confirmação. Formato:
 
 ```
+Estilo: qual voz o texto imita, e de onde você tirou isso.
 Tema: o que o texto defende ou explica, em uma frase.
 Contexto: onde publica, quem assina, o que restringe.
 Público: quem lê e o que já sabe.
@@ -95,5 +135,7 @@ trabalho inteiro.
 - O objetivo é "gerar autoridade" ou "engajar". Isso é efeito, não objetivo. Pergunte
   o que o leitor deve entender.
 - Público descrito como "todos" ou "o mercado".
+- O estilo só foi descrito por adjetivo, "executivo", "leve", "profissional", sem
+  nenhum modelo de voz por trás. Adjetivo sozinho vira ordem de comprimir.
 
 Qualquer um desses, volte e pergunte mais uma coisa. Uma só, a que mais recorta.

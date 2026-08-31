@@ -13,6 +13,12 @@ encolhia.
 Por isso a ordem de revisão importa. Comece pela estrutura. Trocar palavra por
 sinônimo mais simples é a parte fácil e não resolve quase nada sozinha.
 
+Os tiques 10 e 14 ganharam material de um segundo corpus, de outra natureza: uma
+newsletter escrita já com esta skill rodando, em que a fuga disciplinada dos tiques
+catalogados produziu um texto que o próprio autor devolveu como estéril. O caso está
+documentado em [exemplos.md](exemplos.md), e vale a pena ler antes de aplicar
+qualquer proibição desta lista.
+
 ## 1. Sintagma nominal abstrato como sujeito de verbo humano
 
 O tique mais grave e o mais difícil de enxergar. O texto trata de gente atacando
@@ -178,7 +184,15 @@ quatorze frases de até seis palavras, quase um quarto do total.
 
 Três delas aparecem seguidas em um parágrafo de quatro frases.
 
-**Conserto:** uma por texto, se tanto. Emenda o resto na frase anterior.
+**A punchline também aparece na entrada, e aí quase ninguém procura.** No segundo
+corpus, os parágrafos abriam assim: "Repare no segundo.", "Nem toda falha quebra uma
+regra técnica.", "A plataforma não era descuidada." Quem foge do tique 3 costuma cair
+exatamente aqui, trocando o sintagma nominal com verbo declarativo por uma asserção
+curta e seca, e repetindo essa forma nova em todo parágrafo. A monotonia continua a
+mesma, e agora o texto também perdeu as retomadas.
+
+**Conserto:** uma por texto, se tanto, contada no fim e no começo dos parágrafos.
+Emenda o resto na frase anterior.
 
 ## 11. Advérbio em -mente decorativo
 
@@ -217,3 +231,30 @@ que o leitor chama de "cara de IA" mesmo sem identificar nenhum tique isolado.
 
 **Conserto:** toda seção precisa de pelo menos uma âncora no mundo. Uma data. Um
 valor. Uma tela. Uma frase que alguém disse na reunião.
+
+## 14. Substantivo sem determinante
+
+"Scanner procura padrão." "Atacante não tem preferência por porta de entrada."
+"Código limpo não cobre autorização." "Ferramenta automatizada acha padrão."
+
+As quatro saíram do segundo corpus, e todas têm o mesmo defeito: substantivo comum em
+posição de sujeito, sem artigo, sem demonstrativo, sem numeral. É a sintaxe do título
+de jornal, que suprime o determinante porque paga por centímetro de coluna. Fora da
+manchete, o efeito é de legenda de infográfico ou de aforismo, e o leitor tem a
+impressão de estar lendo tópico de slide em vez de prosa.
+
+O caso é primo do tique 1, o sujeito abstrato, mas não se confunde com ele: aqui o
+substantivo pode até ser concreto, o que sumiu foi o determinante.
+
+**Conserto:** devolva o artigo, ou troque o genérico por gente, que costuma ser a
+saída melhor.
+
+> Antes: "Ferramenta automatizada acha padrão, e não existe padrão para 'esta conta
+> não é sua'."
+>
+> Depois: "Nenhuma ferramenta automatizada acha esse tipo de coisa, e a razão é
+> simples: um scanner procura padrão, e não existe padrão para 'esta conta não é
+> sua'."
+
+**Exceção:** provérbio, título e legenda de figura vivem disso e ficam como estão.
+"Casa de ferreiro, espeto de pau" não precisa de artigo.

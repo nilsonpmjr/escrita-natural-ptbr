@@ -6,10 +6,11 @@ description: |
   revisar artigo, newsletter, post, relatório, ensaio, documentação, e-mail ou
   copy em pt-BR, em qualquer área; quando o texto tiver cara de tradução do
   inglês ou de LLM; quando pedirem para "humanizar", "naturalizar" ou "tirar
-  cara de IA" de um texto em português. Levanta briefing de tema, contexto, tom
-  e público antes de escrever, despacha subagentes de pesquisa para enriquecer
-  o conteúdo e cobre travessão, calque, corporativês, ritmo, coesão e
-  construção do argumento.
+  cara de IA" de um texto em português. Levanta briefing de estilo, tema,
+  contexto, tom e público antes de escrever, despacha subagentes de pesquisa
+  para enriquecer o conteúdo, cobre travessão, calque, corporativês, ritmo,
+  coesão e construção do argumento, e verifica o texto contra as regras antes
+  de entregar.
 metadata:
   autor: Nilson Miranda
   base: pesquisa em Othon Garcia, manuais de redação brasileiros, crônica
@@ -50,11 +51,25 @@ informação permanece.
 ### 0. Briefing, antes de qualquer linha
 
 Texto genérico quase sempre nasce de briefing ausente, não de vocabulário ruim. Antes
-de escrever, você precisa saber quatro coisas: **tema, contexto, tom e público**.
+de escrever, você precisa saber cinco coisas, nesta ordem: **estilo, tema, contexto,
+tom e público**.
+
+O estilo vem primeiro porque é ele que fixa o modelo de voz, e o modelo de voz decide
+como as frases vão ser construídas. Perguntar tom antes de estilo inverte a
+dependência: você fica com um adjetivo, "executivo", "leve", "sério", sem saber se o
+texto imita crônica, reportagem explicativa, relatório ou manual. Aí o adjetivo é
+lido como economia de palavras, e o texto sai telegráfico.
 
 Leia [references/briefing.md](references/briefing.md) e levante o que faltar. Regras
 do levantamento:
 
+- **Deduza o estilo do que o usuário já deu**: o jeito como ele escreveu o pedido, o
+  canal que citou, o material de referência que anexou, textos anteriores dele ou da
+  publicação. Só pergunte o estilo quando não der para deduzir, e ao perguntar
+  ofereça modelos de voz, não adjetivos.
+- **Se o usuário não informou nada, peça o contexto antes de qualquer outra
+  pergunta.** Onde publica, quem assina, o que motivou o texto. Sem contexto as
+  outras perguntas não têm em que se apoiar, e você acaba oferecendo opções no vácuo.
 - Aproveite o que o usuário já deu. Não pergunte o que está no pedido.
 - Pergunte em **uma rodada só**, com AskUserQuestion, no máximo quatro perguntas, com
   opções concretas e um recomendado. Perguntas soltas em sequência cansam e atrasam.
@@ -64,8 +79,9 @@ do levantamento:
 - Havendo texto anterior do autor ou da publicação, leia antes de perguntar. Amostra
   responde tom melhor que pergunta.
 
-Feche o briefing em um bloco curto de cinco linhas, tema, contexto, público, tom,
-formato e extensão, e confirme com o usuário antes de gastar pesquisa em cima dele.
+Feche o briefing em um bloco curto de seis linhas, estilo, tema, contexto, público,
+tom, formato e extensão, e confirme com o usuário antes de gastar pesquisa em cima
+dele.
 
 ### 1. A tese, em uma frase
 
@@ -138,18 +154,31 @@ Decida também onde vai o argumento mais forte, porque a ordem muda por gênero:
 
 ### 4. Escreva
 
-Vá para [references/fluencia.md](references/fluencia.md) e escreva seguindo os
-princípios de ritmo, coesão e voz, no registro que o briefing fixou. Os quatro que
-mais mudam o resultado:
+**Leia [references/exemplos.md](references/exemplos.md) antes da primeira frase.** É
+o único arquivo da skill que mostra construção, e não proibição, com o antes e o
+depois de cada passada em texto real. Quem pula esse arquivo escreve otimizando
+contra a lista de tiques, e texto que só foge de tique fica estéril: some a
+subordinação, somem as retomadas, e sobra uma sequência de asserções curtas que
+ninguém falaria em voz alta.
+
+Depois vá para [references/fluencia.md](references/fluencia.md) e escreva seguindo os
+princípios de ritmo, coesão e voz, no modelo de voz que o briefing fixou. Os cinco
+que mais mudam o resultado:
 
 1. **Abra dentro da cena.** Verbo de ação, sem anunciar o assunto. Rubem Braga
    começa "O padeiro" com "Levanto cedo, faço minhas abluções, ponho a chaleira no
    fogo".
-2. **Cole por retomada, não por conectivo.** Antes de escrever "dessa forma", tente
-   retomar o núcleo do parágrafo anterior por outro nome. Se o texto precisa de cola
-   para andar, os parágrafos estão na ordem errada.
-3. **Case cada abstração com um fato concreto no mesmo parágrafo.**
-4. **Feche em imagem ou virada, não em moral.** "E assobiava pelas escadas."
+2. **Troque o conectivo por retomada. Não corte os dois.** "Dessa forma" sai, mas
+   alguma coisa entra no lugar: o núcleo do parágrafo anterior repetido por outro
+   nome, um demonstrativo, um resumo de duas palavras. "Esses quatro pontos,
+   encadeados, viram um caminho" não é cola burocrática, é como o português cola.
+   Parágrafo que abre sem vínculo nenhum com o anterior obriga o leitor a remontar o
+   fio sozinho.
+3. **Varie a forma da abertura, inclusive a forma nova.** Fugir do parágrafo que abre
+   com sintagma nominal e verbo declarativo não autoriza abrir todos com asserção
+   curta e seca. Isso troca um molde único por outro molde único.
+4. **Case cada abstração com um fato concreto no mesmo parágrafo.**
+5. **Feche em imagem ou virada, não em moral.** "E assobiava pelas escadas."
 
 ### 5. Revise
 
@@ -160,7 +189,8 @@ Aplique o modo revisar ao que você escreveu. Sempre.
 Três passadas, nesta ordem. A ordem importa: consertar palavra antes de consertar
 estrutura é o erro que fez o corpus de origem passar por quatro versões sem melhorar.
 
-Ao revisar texto de terceiro, levante o briefing mesmo assim, ao menos público e tom.
+Ao revisar texto de terceiro, levante o briefing mesmo assim, ao menos estilo,
+público e tom.
 Sem isso você não tem como julgar se o registro está certo, e acaba corrigindo para o
 seu gosto em vez de para o leitor dele.
 
@@ -187,16 +217,33 @@ Ainda em [references/estruturas.md](references/estruturas.md), mais
 - **Sujeito.** Quem faz a ação? Conceito abstrato praticando verbo humano é o tique
   mais grave e o mais difícil de ver. "A conformidade não enxerga" vira "ninguém
   perguntou".
+- **Substantivo sem determinante.** "Scanner procura padrão", "Atacante não tem
+  preferência", "Código limpo não cobre autorização". É sintaxe de manchete, que
+  comprime porque paga por centímetro de coluna. Em prosa vira legenda de
+  infográfico. Devolva o artigo, ou troque o genérico por gente: "nenhum scanner faz
+  essa pergunta".
+- **Coesão.** Leia só a primeira frase de cada parágrafo e marque quantas retomam
+  alguma coisa do parágrafo anterior, seja por repetição, sinônimo, demonstrativo ou
+  resumo. Menos da metade e o texto virou uma sequência de compartimentos estanques,
+  o defeito que o Estadão descreve no §28. O conserto não é acrescentar "dessa
+  forma", é devolver o referente.
 - **Simetria.** Conte as séries de três no parágrafo. Mais de uma, quebre. Procure
   também anáfora, paralelismo de fragmentos e repetição da mesma palavra na virada.
 - **Aberturas.** Leia só a primeira frase de cada parágrafo, em sequência. Se todas
   tiverem a mesma forma sintática, varie. O Estadão é explícito: não use
-  repetidamente a mesma estrutura de frase.
-- **Ritmo.** Três períodos curtos seguidos com a mesma estrutura é frase soluçante,
-  e é o vício da IA. Hierarquize: escolha as duas ou três ideias que sustentam o
-  parágrafo, deixe em oração principal, rebaixe o resto a subordinada. Cuidado com o
-  vício oposto, o período centopeia de oitenta palavras.
-- **Punchline.** Frase curta de efeito isolada: uma por texto, se tanto.
+  repetidamente a mesma estrutura de frase. Conte também quantas abrem com asserção
+  curta e seca: sendo o molde dominante, é a frase-manchete de novo, só que em outra
+  roupa.
+- **Ritmo.** Conte as frases de até oito palavras. Passando de um quinto do total, o
+  texto está picado, mesmo que nunca apareçam três seguidas com a mesma estrutura, e
+  é esse o teste que pega a frase soluçante de verdade. No corpus de origem, a v1
+  tinha quatorze frases de até seis palavras, quase um quarto do total. Hierarquize:
+  escolha as duas ou três ideias que sustentam o parágrafo, deixe em oração
+  principal, rebaixe o resto a subordinada. Cuidado com o vício oposto, o período
+  centopeia de oitenta palavras.
+- **Punchline.** Frase curta de efeito isolada: uma por texto, se tanto, e ela conta
+  tanto no fim do parágrafo quanto na entrada. "Repare no segundo." é punchline de
+  abertura, e escapa de quem só procura no fim.
 - **Contraste binário.** "Não é X, é Y" vira "é Y". A negação prévia é rampa que o
   leitor não pediu.
 - **Pergunta retórica** respondida pelo próprio autor: conte o que você fez, em vez
@@ -228,13 +275,34 @@ Consulte [references/calques.md](references/calques.md) e
 - **Listas:** frase-guia com dois-pontos, item em minúscula, ponto e vírgula no fim,
   ponto final no último. E, antes disso, pergunte se a lista precisa existir.
 
-## Verificações finais
+## Verificação antes de entregar
+
+**Esta passada é obrigatória, sempre.** Vale para texto curto, vale quando o usuário
+tem pressa e vale quando você acha que já revisou o bastante. Escrever e revisar não
+bastam, porque o texto sai justamente com os tiques que você não foi procurar. Rode
+a verificação no texto final, com ele na frente, nunca de memória, e quando o texto
+estiver em arquivo conte de verdade, com script se for o caso: contagem de cabeça
+subestima sempre.
+
+### As contagens
+
+| O que contar | Limite | Se estourar |
+|---|---|---|
+| Frases de até oito palavras | um quinto do total | hierarquize, emende na frase anterior |
+| Aberturas de parágrafo que retomam o parágrafo anterior | metade, no mínimo | devolva o referente |
+| Aberturas seguidas com a mesma forma sintática | duas | varie a entrada |
+| Séries de três no mesmo parágrafo | uma | quebre |
+| Frases-punchline no texto inteiro | uma | emende o resto |
+| Travessões de ênfase | zero | vírgula, dois-pontos, parênteses ou ponto |
+| Números sem fonte que você tenha visto | zero | corte, ou vá verificar |
+
+### A leitura em voz alta
 
 Leia em voz alta. O melhor teste da tradição brasileira inteira está no Estadão,
 §15: **nunca escreva o que você não diria.** Se você não falaria aquela frase para
 uma pessoa na sua frente, reescreva.
 
-Depois, seis perguntas:
+### As seis perguntas
 
 | Dimensão | Pergunta |
 |---|---|
@@ -248,8 +316,11 @@ Depois, seis perguntas:
 Se qualquer resposta for ruim, volte para a passada 1. Não tente consertar na
 passada 3.
 
-Ao entregar, diga em três linhas o que veio da pesquisa e não estava no briefing, e o
-que os subagentes não acharam. O usuário precisa saber onde o texto está apoiado.
+### O que declarar na entrega
+
+Três linhas: o que veio da pesquisa e não estava no briefing, o que os subagentes não
+acharam, e qualquer contagem que tenha ficado no limite. O usuário precisa saber onde
+o texto está apoiado e onde ele quase escorregou.
 
 ## Preservar a voz
 
@@ -285,17 +356,20 @@ brasileira, alínea da ABNT ou a tradição da crônica. É o que esta cobre.
 
 ## Referências
 
-- [references/briefing.md](references/briefing.md), as perguntas de tema, contexto,
-  tom e público, com padrões por gênero e tabela de registro.
+- [references/briefing.md](references/briefing.md), as perguntas de estilo, tema,
+  contexto, tom e público, com os modelos de voz, os padrões por gênero e a tabela
+  de registro.
 - [references/pesquisa.md](references/pesquisa.md), protocolo dos subagentes:
   ângulos, prompt pronto, critério de fonte e síntese do dossiê.
-- [references/estruturas.md](references/estruturas.md), treze tiques estruturais com
-  evidência de corpus real.
+- [references/estruturas.md](references/estruturas.md), catorze tiques estruturais
+  com evidência de corpus real.
 - [references/fluencia.md](references/fluencia.md), ritmo, coesão, argumento e voz,
   a partir de Othon Garcia, dos manuais de redação e da crônica.
 - [references/calques.md](references/calques.md), catálogo "evite, use" de calque,
   anglicismo, corporativês e léxico de LLM.
 - [references/pontuacao.md](references/pontuacao.md), travessão, vírgula, aspas,
   números, títulos e listas à brasileira.
-- [references/exemplos.md](references/exemplos.md), as três passadas aplicadas de
-  ponta a ponta num artigo real, com o antes e o depois de cada uma.
+- [references/exemplos.md](references/exemplos.md), **leitura obrigatória antes de
+  escrever**: as passadas aplicadas de ponta a ponta em dois corpora reais, com o
+  antes e o depois de cada uma, e o capítulo sobre o texto que fica estéril de tanto
+  fugir de tique.

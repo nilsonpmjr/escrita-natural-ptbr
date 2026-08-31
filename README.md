@@ -18,19 +18,26 @@ npx skills add nilsonpmjr/escrita-natural-ptbr
 
 De fora para dentro, sempre nesta ordem:
 
-1. **Briefing.** Antes da primeira linha, o agente levanta tema, contexto, tom e
-   público, em uma rodada só de perguntas. Texto vazio quase sempre nasce de briefing
-   ausente, não de vocabulário ruim.
+1. **Briefing.** Antes da primeira linha, o agente levanta estilo, tema, contexto,
+   tom e público, em uma rodada só de perguntas. O estilo vem primeiro, e quase sempre
+   é deduzido do que você já escreveu no pedido, porque é ele que fixa o modelo de voz
+   que o texto vai imitar. Texto vazio quase sempre nasce de briefing ausente, não de
+   vocabulário ruim.
 2. **Pesquisa.** De dois a quatro subagentes rodam em paralelo, cada um com um ângulo
    diferente: números com fonte, casos datados, histórico, contraditório. Todos recebem
    ordem de descartar conteúdo com cara de IA e de declarar o que não encontraram.
 3. **Tese e linha de raciocínio.** Uma frase que o texto inteiro defende, e depois uma
    linha por parágrafo dizendo o que ele acrescenta ao anterior. Parágrafo que não
    passa nesse teste não existe ainda.
-4. **Escrita**, no registro que o briefing fixou.
+4. **Escrita**, no modelo de voz que o briefing fixou, depois de ler os exemplos
+   trabalhados. Lista de proibição sem modelo de construção produz texto que não erra
+   nada e não soa a ninguém.
 5. **Revisão em três passadas**, nesta ordem: argumento e parágrafo, depois frase,
    depois palavra e pontuação. Inverter a ordem é o erro que fez o corpus original
    passar por quatro reescritas sem melhorar.
+6. **Verificação antes de entregar**, obrigatória e contável: proporção de frases
+   curtas, aberturas de parágrafo que retomam o anterior, séries de três, punchlines,
+   travessões e números sem fonte.
 
 O modo revisar roda sozinho quando você entrega um texto pronto para melhorar.
 
@@ -39,13 +46,13 @@ O modo revisar roda sozinho quando você entrega um texto pronto para melhorar.
 | Arquivo | Conteúdo |
 |---|---|
 | `SKILL.md` | O processo: briefing, pesquisa, escrita e as três passadas de revisão |
-| `references/briefing.md` | As quatro perguntas, tabela de registro com amostra de tom, padrões quando o usuário não responde |
+| `references/briefing.md` | As cinco perguntas, os modelos de voz, tabela de registro com amostra de tom, padrões quando o usuário não responde |
 | `references/pesquisa.md` | Protocolo dos subagentes: ângulos, prompt pronto, critério de fonte, síntese do dossiê |
-| `references/estruturas.md` | Treze tiques estruturais de IA, com evidência de corpus real |
+| `references/estruturas.md` | Catorze tiques estruturais de IA, com evidência de corpus real |
 | `references/fluencia.md` | Ritmo, coesão, argumento e voz, a partir de Othon Garcia, dos manuais de redação e da crônica |
 | `references/calques.md` | Catálogo "evite, use" de calque, anglicismo, corporativês e léxico de LLM |
 | `references/pontuacao.md` | Travessão, vírgula, aspas, números, títulos e listas à brasileira |
-| `references/exemplos.md` | As três passadas aplicadas de ponta a ponta num artigo real |
+| `references/exemplos.md` | Leitura obrigatória antes de escrever: as passadas aplicadas de ponta a ponta em dois corpora reais |
 
 ## Alguns exemplos do que ela corrige
 

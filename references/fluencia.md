@@ -52,6 +52,14 @@ A regra mais útil da tradição está no Estadão, §29:
 Se o texto precisa de "dessa forma" ou "nesse sentido" para colar dois parágrafos,
 os parágrafos estão na ordem errada. Conserte a ordem. Não acrescente a cola.
 
+**Cuidado com a leitura preguiçosa desta regra.** O que ela manda é trocar o
+conectivo pela retomada, e não suprimir os dois. Quem lê "não acrescente a cola" e
+sai cortando termina com parágrafos justapostos que o leitor precisa costurar
+sozinho, e o resultado é o mesmo compartimento estanque do §28, só que por outro
+caminho. O teste é contável: leia a primeira frase de cada parágrafo e veja quantas
+retomam alguma coisa do parágrafo anterior, por repetição, sinônimo, demonstrativo ou
+resumo. Menos da metade, falta retomada.
+
 Vale uma nota de honestidade histórica: "outrossim" aparece em Othon (1967) numa
 lista de conectivos de adição, **sem ressalva**. Essas palavras não nasceram
 burocráticas. O que as marcou foi o uso posterior, no juridiquês e, principalmente,
@@ -72,6 +80,17 @@ isso, embora, ainda assim.
 Justaposição basta quando a relação é evidente. Othon: *"Estou muito preocupado. Há
 vários dias que não recebo notícias de minha filha."* A ausência do "porque" não
 atrapalha nada.
+
+Ela deixa de bastar quando o referente já saiu do campo de visão, depois de uma
+lista, de um subtítulo ou de um exemplo longo:
+
+> ❌ "Encadeados, viram um caminho: descobrir clientes válidos por força bruta..."
+>
+> ✅ "Esses quatro pontos, encadeados, viram um caminho só. Um atacante descobre
+> client_ids válidos por força bruta..."
+
+O sujeito elíptico da primeira versão apontava para uma lista que tinha terminado
+dois espaços acima. Custa três palavras devolver o referente.
 
 O encadeamento forte vem de **retomada lexical**, não de conjunção. Othon analisa
 um parágrafo de Alceu Amoroso Lima e mostra a costura: "a mocidade" volta como
@@ -226,6 +245,13 @@ Gerundismo é vício explícito: "vou estar encaminhando os documentos" vira "vo
 encaminhar" ou "encaminho".
 
 ## Voz: o que a crônica ensina
+
+A crônica é o modelo mais bem documentado da prosa brasileira curta, e por isso
+domina esta seção. Não é o único modelo. Antes de importar os procedimentos abaixo,
+confira no briefing qual voz o texto pede: em artigo de especialista e em reportagem
+explicativa, a elipse rende menos que a retomada, e é o referente repetido na abertura
+do parágrafo que segura o leitor no raciocínio. A tabela de modelos de voz está em
+[briefing.md](briefing.md).
 
 **Abra dentro da cena, no verbo, sem anunciar o assunto.** Rubem Braga, "O padeiro"
 (1956):
