@@ -22,6 +22,11 @@ vácuo.
 
 ### 1. Estilo e modelo de voz
 
+Sem outra indicação, adote português brasileiro profissional contemporâneo. Para
+texto técnico, use explicação direta com terminologia corrente da área. Identifique
+o conhecimento do público para decidir o que explicar; não pergunte se todo termo
+inglês deve ser traduzido. Crônica só é modelo quando combina com o gênero.
+
 Esta é a primeira pergunta e, na maioria das vezes, ela não chega a ser feita: o
 estilo se deduz. O jeito como o usuário escreveu o pedido, o canal que ele citou, o
 documento que anexou como referência e qualquer texto anterior dele já dizem quase

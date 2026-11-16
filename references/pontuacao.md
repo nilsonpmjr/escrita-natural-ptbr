@@ -193,15 +193,17 @@ para imprimir tom irônico" (Bahia, 2021).
 
 ## Itálico e estrangeirismo
 
-Itálico em palavra estrangeira ainda não aportuguesada e em título de obra. Redondo,
-sem marcação, em estrangeirismo já incorporado.
+Siga o padrão editorial informado. Sem padrão específico, termos técnicos
+habituais do público ficam sem itálico; origem inglesa não exige destaque. Use
+itálico para expressões estrangeiras ocasionais e títulos de obras.
 
 - **Sem itálico:** déficit, e-mail, internet, per capita, performance, site, superávit,
   web, workshop.
-- **Com itálico:** à la carte, backup, banner, download, hardware, release, stricto
-  sensu.
+- **Sem itálico em texto técnico:** backup, banner, download, hardware, release.
+- **Itálico em expressão ocasional:** à la carte, stricto sensu.
 
-Nunca use aspas para marcar estrangeirismo. Itálico.
+Não use aspas apenas para marcar origem estrangeira. Preserve a grafia de rótulos
+de interface, identificadores e código.
 
 ## Títulos: caixa de sentença, não Title Case
 

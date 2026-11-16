@@ -1,13 +1,33 @@
 # Calques, anglicismos e corporativês
 
-Catálogo de "evite, use". Consulte quando o texto tiver cara de tradução ou de
+Orientações contextuais de revisão, não uma lista de substituições obrigatórias. Consulte quando o texto tiver cara de tradução ou de
 reunião de trabalho. Fontes no fim.
+
+## Registro contemporâneo e terminologia
+
+O padrão é português brasileiro profissional atual, claro e preciso. Referências
+clássicas ensinam coesão e argumentação; não determinam o vocabulário nem a voz de
+um texto técnico de hoje. Prefira palavras correntes, sem impor informalidade nem
+eliminar termos especializados necessários. Uma palavra não é inadequada só por
+ser formal, antiga ou de origem estrangeira: avalie seu uso no contexto.
+
+A terminologia segue o uso da área e do público. Preserve termos como deploy,
+rollback, endpoint, payload e timeout quando forem as escolhas habituais. Explique
+na primeira ocorrência quando o leitor precisar, sem tradução obrigatória. Use o
+equivalente português quando ele for natural e preciso naquele contexto. Não troque
+feedback por devolutiva nem workshop por oficina automaticamente.
+
+Preserve nomes de produtos, código, identificadores e rótulos de interface. Consulte
+a documentação ou exemplos atuais da área quando houver dúvida relevante sobre o
+uso; não deduza inadequação apenas da origem inglesa. A amostra do autor e o padrão
+editorial informado orientam as escolhas, preservando precisão e sentido.
 
 ## Antes de aplicar: calque de verdade e calque de frequência
 
 Nem tudo que cheira a inglês é erro, e tratar tudo como erro estraga texto bom.
 
-- **[CALQUE]** é estrutura importada que não existia em português. Corrija sempre.
+- **[CALQUE]** indica possível interferência de tradução. Corrija quando houver erro de
+  sentido ou construção artificial no contexto, não apenas semelhança com inglês.
 - **[FREQ]** é estrutura legítima e antiga em português, usada por Machado e por
   Camões, que a IA e o tradutor apressado repetem numa taxa que nenhum brasileiro
   usa espontaneamente. Aqui o problema é dose, não gramática. Corrija a partir da
@@ -21,7 +41,7 @@ perfeitamente portuguesa. Uma vez num artigo, tudo bem. Três vezes, é máquina
 | Evite | Origem | Use | Tipo |
 |---|---|---|---|
 | isso não é sobre X, é sobre Y | it's not about X, it's about Y | o problema não é X, é Y | CALQUE |
-| no final do dia | at the end of the day | no fim das contas, afinal, no frigir dos ovos | CALQUE |
+| no final do dia | at the end of the day | no fim das contas, afinal | CALQUE |
 | aqui está o porquê | here's why | explico por quê, o motivo é este | CALQUE |
 | o que isso significa é que | what this means is that | ou seja, quer dizer, na prática | CALQUE |
 | certifique-se de que | make sure that | veja se, confira se, garanta que | CALQUE |
@@ -70,7 +90,11 @@ profissionais.
 >
 > ✅ "Ele mudou de forma drástica, e é mesmo lisonjeador fazer parte disso."
 
-## 2. Falsos amigos
+## 2. Falsos amigos e equivalências dependentes do sentido
+
+As linhas abaixo exigem leitura do contexto. Aplicação de software, conexão de
+rede, verificar dados e inserir registros são usos técnicos válidos. Não substitua
+termos corretos apenas porque aparecem nesta tabela.
 
 | Inglês | Decalque errado | Use |
 |---|---|---|
@@ -105,22 +129,26 @@ profissionais.
 | library | livraria | biblioteca |
 | parents | parentes | pais |
 
-## 3. Verbos e adjetivos do corporativês anglófono
+## 3. Alternativas para jargão vago
+
+As alternativas ajudam quando esclarecem a mensagem; não são correções universais.
+Escalar horizontalmente, suportar uma funcionalidade e suporte nativo podem ser
+precisos. Preserve também aportuguesamentos correntes quando adequados ao público.
 
 | Evite | Origem | Use | Por que soa mal |
 |---|---|---|---|
-| endereçar um problema | address | tratar, abordar, enfrentar, resolver | em português, endereçar é pôr endereço |
+| endereçar um problema | address | tratar, abordar, enfrentar, resolver | prefira a ação específica quando esclarecer |
 | acionável | actionable | prático, aplicável, com o que fazer | em pt jurídico é "sujeito a ação judicial" |
 | entregar valor | deliver value | ser útil, dar resultado, resolver o problema do cliente | ninguém entrega valor, entrega coisa |
 | reportar a alguém | report to | responder a, prestar contas a | |
 | reportar (informar) | report | informar, relatar, avisar, registrar | |
-| assertivo (= certeiro) | assertive | firme, direto; ou certeiro, acertado | o uso mais comum no Brasil é o errado |
-| suportar funcionalidade | support | dar suporte a, ser compatível com, aceitar | em pt, suportar é aguentar sofrimento |
+| assertivo (= certeiro) | assertive | firme, direto; ou certeiro, acertado | distinga firmeza de acerto pelo contexto |
+| suportar funcionalidade | support | dar suporte a, ser compatível com, aceitar | preserve no sentido técnico quando preciso |
 | customizar | customize | personalizar, adaptar, fazer sob medida | |
 | startar, schedular | start, schedule | começar, disparar; agendar, marcar | aportuguesamento gratuito |
 | deletar | delete | apagar, excluir, remover | |
 | performar | perform | render, funcionar, se sair bem | |
-| escalar (crescer) | scale | crescer, ampliar, ganhar escala | em pt, escalar é subir ou designar equipe |
+| escalar (crescer) | scale | crescer, ampliar, ganhar escala | preserve no contexto de escalabilidade |
 | acessar (curinga) | access | entrar em, abrir, consultar, ver, ler | apaga o verbo específico |
 | alavancar | leverage | aproveitar, usar, tirar proveito de | metáfora financeira fora de lugar |
 | robusto | robust | sólido, bem-feito, confiável | adjetivo-esponja, não informa nada |
@@ -143,7 +171,11 @@ profissionais.
 | curadoria | curated | seleção, escolha, garimpo | |
 | insight | insight | sacada, percepção, descoberta, estalo | |
 
-## 4. Estrangeirismo com equivalente consagrado
+## 4. Alternativas em português quando ajudarem o público
+
+Preserve o inglês habitual da área. Feedback, workshop e compliance não exigem
+tradução. Os pares abaixo oferecem alternativas, não equivalências exatas em todos
+os contextos; compliance pode designar uma função mais ampla que conformidade.
 
 | Evite | Use |
 |---|---|
@@ -166,7 +198,8 @@ profissionais.
 | downsizing | corte de pessoal, enxugamento |
 | outsourcing | terceirização |
 
-Os três últimos merecem atenção especial. Vernalha (PUC-SP, 2018) mostra, com
+Eufemismos merecem atenção quando ocultam o que ocorreu, independentemente do
+idioma. Não deduza demissões ou transferência de produção apenas desses termos. Vernalha (PUC-SP, 2018) mostra, com
 análise de discurso sobre corpus da imprensa de negócios, que esses anglicismos
 funcionam como **eufemismo deliberado**: mascaram demissão em massa. O caso dele:
 "Oi Faz Downsizing e Corta Gastos com Pessoal em 20%" contra "Oi demite cerca de

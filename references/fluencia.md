@@ -246,6 +246,10 @@ encaminhar" ou "encaminho".
 
 ## Voz: o que a crônica ensina
 
+Use os exemplos históricos abaixo para observar construção, não para copiar
+vocabulário. Em escrita técnica atual, prefira o registro profissional do público.
+Abertura em cena e fecho em imagem só se aplicam quando o gênero os comporta.
+
 A crônica é o modelo mais bem documentado da prosa brasileira curta, e por isso
 domina esta seção. Não é o único modelo. Antes de importar os procedimentos abaixo,
 confira no briefing qual voz o texto pede: em artigo de especialista e em reportagem

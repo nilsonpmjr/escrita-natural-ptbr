@@ -34,6 +34,25 @@ Os exemplos das referências saem de um artigo técnico de segurança, porque fo
 material disponível para análise forense. Os tiques são de língua, não de área:
 valem igual para pauta de saúde, relatório financeiro, post de produto ou crônica.
 
+## Registro contemporâneo e terminologia
+
+O padrão é português brasileiro profissional atual, claro e preciso. Referências
+clássicas ensinam coesão e argumentação; não determinam o vocabulário nem a voz de
+um texto técnico de hoje. Prefira palavras correntes, sem impor informalidade nem
+eliminar termos especializados necessários. Uma palavra não é inadequada só por
+ser formal, antiga ou de origem estrangeira: avalie seu uso no contexto.
+
+A terminologia segue o uso da área e do público. Preserve termos como deploy,
+rollback, endpoint, payload e timeout quando forem as escolhas habituais. Explique
+na primeira ocorrência quando o leitor precisar, sem tradução obrigatória. Use o
+equivalente português quando ele for natural e preciso naquele contexto. Não troque
+feedback por devolutiva nem workshop por oficina automaticamente.
+
+Preserve nomes de produtos, código, identificadores e rótulos de interface. Consulte
+a documentação ou exemplos atuais da área quando houver dúvida relevante sobre o
+uso; não deduza inadequação apenas da origem inglesa. A amostra do autor e o padrão
+editorial informado orientam as escolhas, preservando precisão e sentido.
+
 ## Duas coisas que a skill não faz
 
 **Não inventa fato.** Nunca acrescente nome, número, data, citação ou fonte que não
@@ -118,12 +137,12 @@ O protocolo completo, com os ângulos, o prompt pronto e o formato de retorno, e
   visão contrária e crítica à tese.
 - Cada um devolve fato verificável com fonte, ano e link, não resumo de tema.
 - Todos recebem ordem de **descartar conteúdo que pareça gerado por IA**: post de SEO
-  genérico posterior a 2023, "guia definitivo", listicle. Prioridade para fonte
+  genérico sem evidência, "guia definitivo", listicle. Prioridade para fonte
   primária, academia, imprensa e documento oficial.
 - Todos precisam dizer o que **não** encontraram. Lacuna declarada vale mais que
   lacuna preenchida por invenção.
-- Se o tema for de língua, estilo ou uso do português, mande priorizar fonte anterior
-  a 2022.
+- Se o tema for de língua, estilo ou uso do português, selecione fontes por
+  autoridade e pertinência; para vocabulário e registro, confira o uso atual.
 
 Depois, escolha. Um número por argumento, e ele tem que fazer trabalho. Sete números
 empilhados em quatro frases não provam nada além de "isso é grande". Fato que
@@ -165,9 +184,9 @@ Depois vá para [references/fluencia.md](references/fluencia.md) e escreva segui
 princípios de ritmo, coesão e voz, no modelo de voz que o briefing fixou. Os cinco
 que mais mudam o resultado:
 
-1. **Abra dentro da cena.** Verbo de ação, sem anunciar o assunto. Rubem Braga
-   começa "O padeiro" com "Levanto cedo, faço minhas abluções, ponho a chaleira no
-   fogo".
+1. **Abra pela necessidade do leitor.** Em texto técnico, apresente o problema,
+   o resultado ou a ação: "O deploy falhou porque a aplicação não encontrou o token."
+   Abertura em cena é uma opção para narrativa, não uma obrigação geral.
 2. **Troque o conectivo por retomada. Não corte os dois.** "Dessa forma" sai, mas
    alguma coisa entra no lugar: o núcleo do parágrafo anterior repetido por outro
    nome, um demonstrativo, um resumo de duas palavras. "Esses quatro pontos,
@@ -178,7 +197,8 @@ que mais mudam o resultado:
    com sintagma nominal e verbo declarativo não autoriza abrir todos com asserção
    curta e seca. Isso troca um molde único por outro molde único.
 4. **Case cada abstração com um fato concreto no mesmo parágrafo.**
-5. **Feche em imagem ou virada, não em moral.** "E assobiava pelas escadas."
+5. **Feche conforme o gênero.** Em texto técnico, conclua com o resultado, a
+   limitação ou o próximo passo. Imagem e virada são recursos de narrativa.
 
 ### 5. Revise
 
@@ -295,6 +315,10 @@ subestima sempre.
 | Frases-punchline no texto inteiro | uma | emende o resto |
 | Travessões de ênfase | zero | vírgula, dois-pontos, parênteses ou ponto |
 | Números sem fonte que você tenha visto | zero | corte, ou vá verificar |
+
+Confira também se entrou vocabulário datado sem função, se alguma tradução tornou
+o conceito menos reconhecível e se os termos continuam consistentes. Preserve usos
+técnicos precisos de palavras como aplicação, conexão, escalar e suporte nativo.
 
 ### A leitura em voz alta
 

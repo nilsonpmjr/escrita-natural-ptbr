@@ -136,6 +136,11 @@ Esse corpus definiu a ordem de trabalho da skill, e um segundo corpus, escrito j
 as regras, mostrou o efeito colateral oposto, o texto estéril de tanto fugir de tique.
 As duas análises estão em `references/exemplos.md`.
 
+O padrão é português brasileiro profissional atual. Termos técnicos seguem o uso
+da área e recebem explicação quando o público precisar, sem tradução obrigatória.
+As tabelas oferecem alternativas contextuais, não proibições ao inglês. Referências
+históricas orientam construção e coesão, sem impor vocabulário de época.
+
 A base bibliográfica é Othon Garcia (*Comunicação em Prosa Moderna*), manuais de
 redação da imprensa brasileira, crônica brasileira e estudos de tradução do inglês para
 o português. Cada referência cita as fontes com ano e link.

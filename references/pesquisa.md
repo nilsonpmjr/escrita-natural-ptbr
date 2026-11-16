@@ -48,13 +48,16 @@ O que eu quero:
 
 O que eu não quero:
 - resumo do tema, definição de dicionário, panorama geral;
-- conteúdo que pareça gerado por IA: post de SEO genérico posterior a 2023, "guia
+- conteúdo que pareça gerado por IA: post de SEO genérico sem evidência, "guia
   definitivo", listicle, blog de agência sem autor;
 - fonte que só cita outra fonte. Vá até a original.
 
 Prioridade de fonte: documento oficial, artigo acadêmico, imprensa com repórter
 assinando, documentação de quem construiu a coisa, relato em primeira pessoa.
-[Se o tema for língua, estilo ou uso do português: priorize material anterior a 2022.]
+[Se o tema for língua, estilo ou uso do português: selecione por autoridade e
+pertinência. Para registro e terminologia, confira exemplos atuais do público-alvo.
+Data recente não é evidência de autoria por IA; fonte antiga pode fundamentar
+coesão sem servir de modelo de vocabulário contemporâneo.]
 
 Formato do retorno, uma linha por achado:
 AFIRMAÇÃO | NÚMERO OU DATA | FONTE, ANO | LINK | confiança alta ou média ou baixa
